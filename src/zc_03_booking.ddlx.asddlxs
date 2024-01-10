@@ -1,0 +1,66 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo:
+{
+    typeNamePlural: 'Bookings',
+    title.value: 'Bookid',
+    description.value: 'Passname'
+}
+annotate view ZC_03_Booking with
+{
+  /* Facets */
+
+  @UI.facet:
+  [
+      { position: 10, label: 'Booking Details', type: #FIELDGROUP_REFERENCE, targetQualifier: 'Details' }
+  ]
+
+  /* Fileds */
+
+  //    Fldate;
+
+//  @UI.lineItem: [{ position: 10 }]
+  @UI.fieldGroup: [{ qualifier: 'Details', position: 10 }]
+  Bookid;
+
+  @UI.lineItem: [{ position: 20 }]
+  Customid;
+  //    Custtype;
+  //    Smoker;
+
+  //  @UI.lineItem: [{ position: 20 }]
+  //  @UI.fieldGroup: [{ qualifier: 'Details', position: 20 }]
+  //  Luggweight;
+
+  //  @UI.lineItem: [{ position: 30 }]
+  //  @UI.fieldGroup: [{ qualifier: 'Details', position: 30 }]
+  //  Wunit;
+  //    Invoice;
+  //    Class;
+  //    Forcuram;
+  //    Forcurkey;
+
+//  @UI.lineItem: [{ position: 40 }]
+  @UI.fieldGroup: [{ qualifier: 'Details', position: 40 }]
+  Loccuram;
+
+//  @UI.lineItem: [{ position: 50 }]
+  @UI.fieldGroup: [{ qualifier: 'Details', position: 50 }]
+  Loccurkey;
+
+//  @UI.lineItem: [{ position: 60 }]
+  @UI.fieldGroup: [{ qualifier: 'Details', position: 60 }]
+  OrderDate;
+  //    Counter;
+  //    Agencynum;
+  //    Cancelled;
+  //    Reserved;
+
+  //  @UI.lineItem: [{ position: 15 }]
+  //  @UI.fieldGroup: [{ qualifier: 'Details', position: 15 }]
+  //  Passname;
+  //    Passform;
+  //    Passbirth;
+
+
+
+}
